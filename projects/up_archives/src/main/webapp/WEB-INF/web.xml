@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" 
+         version="2.5" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"> 
+ 
+<!--  <!DOCTYPE web-app PUBLIC -->
+<!--  "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" -->
+<!--  "http://java.sun.com/dtd/web-app_2_3.dtd" > -->
+
+<!-- <web-app> -->
+  <display-name>Archetype Created Web Application</display-name>
+  
+  <session-config>
+  <session-timeout>60</session-timeout>
+  </session-config>
+  
+  <servlet>
+  <servlet-name>stateArchive</servlet-name>
+  <servlet-class>
+  org.springframework.web.servlet.DispatcherServlet
+  </servlet-class>
+  </servlet>
+ 
+ 
+  <servlet>
+  	<description>
+  	</description>
+  	<display-name>GetListDetailsTable</display-name>
+  	<servlet-name>GetListDetailsTable</servlet-name>
+  	<servlet-class>com.stateArchive.contollers.GetListDetailsTable</servlet-class>
+  </servlet>
+  
+<servlet-mapping>
+  <servlet-name>stateArchive</servlet-name>
+  <url-pattern>/</url-pattern>
+  </servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>GetListDetailsTable</servlet-name>
+	<url-pattern>/GetListDetailsTable</url-pattern>
+</servlet-mapping>
+
+
+<welcome-file-list>  
+   <welcome-file>welcome.jsp</welcome-file>    
+  </welcome-file-list>  
+  
+  
+  
+  
+</web-app>
