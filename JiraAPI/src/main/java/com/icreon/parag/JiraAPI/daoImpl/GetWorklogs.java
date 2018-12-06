@@ -54,6 +54,7 @@ public class GetWorklogs {
 	        JSONObject myResponse = new JSONObject(response.getBody());
 
 	        JSONArray jsonResults = myResponse.getJSONArray("results");
+	        System.out.println(jsonResults);
 
 	        for(int i=0; i < jsonResults.length();i++){
 	            System.out.println(jsonResults.getJSONObject(i).getInt("tempoWorklogId"));

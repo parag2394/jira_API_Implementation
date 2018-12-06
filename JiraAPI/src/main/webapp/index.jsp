@@ -221,6 +221,7 @@ body {
                     <td ><h6>WorkLog ID</h6></td>
                      <td ><h6>Issue No.</h6></td>
                       <td ><h6>Start Date</h6></td>
+<!--                       <td ><h6>Updated At</h6></td> -->
                        <td ><h6>Description</h6></td>
                         <td ><h6>Author</h6></td>
                          <td ><h6>Time Spent</h6></td>
@@ -252,6 +253,7 @@ body {
 		     <td><%=jsonResults.getJSONObject(i).getInt("tempoWorklogId")%></td>
 		     <td><%=jsonResults.getJSONObject(i).getJSONObject("issue").getString("key").trim()%></td>
 		     <td><%=jsonResults.getJSONObject(i).getString("startDate").trim()%></td>
+<%-- 		     <td><%=jsonResults.getJSONObject(i).getString("updatedAt").trim()%></td> --%>
 		     <td><%=jsonResults.getJSONObject(i).getString("description").trim()%></td>
 		     <td><%=jsonResults.getJSONObject(i).getJSONObject("author").getString("displayName").trim()%></td>
 		     <td><%=jsonResults.getJSONObject(i).getInt("timeSpentSeconds")/3600%> hrs</td>
