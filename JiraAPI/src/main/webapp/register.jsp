@@ -129,7 +129,7 @@ function mySubmit(obj)
 	hashObj.update(pwdObj.value);
 	var hash=hashObj.getHash("HEX");
 	pwdObj.value=hash;
-	
+	alert(hash);
 	}
 </script>
 
